@@ -131,13 +131,11 @@ class Rocketbox {
         return json_decode($result);
     }
 
-    public function sendMail($to, $subject, $body){
+    public function sendMail($object){
         $result = $this->curl($this->api_path . "mail/send",
             array(
                 "token" => $this->token,
-                "to" => $to,
-                "subject" => $subject,
-                "body" => $body
+                "value" => json_encode($object)
                 ));
 
         return json_decode($result);
