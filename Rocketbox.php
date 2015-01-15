@@ -4,7 +4,7 @@
 class Rocketbox {
 
     private $token = "-- YOUR TOKEN HERE --";
-    private $api_path = "https://www.rocketbox.io/api/v1/";
+    private $api_path = "https://rocketbox.io/api/v1/";
 
 
     public function get($key) {
